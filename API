@@ -1,0 +1,3 @@
+POST /api/search
+Headers: X-API-Key: <your key>
+Body: { "query": "your question", "limit": 10 }
