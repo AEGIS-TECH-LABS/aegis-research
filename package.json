@@ -1,0 +1,25 @@
+{
+  "name": "aegis-research",
+  "version": "1.0.0",
+  "description": "Personal research API with bot filtering and multi-source routing",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "cheerio": "^1.0.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-rate-limit": "^7.4.1",
+    "node-fetch": "^2.7.0",
+    "robots-parser": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
