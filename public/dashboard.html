@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>API Keys — Aegis</title>
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<header>
+  <h1>API Keys</h1>
+  <nav>
+    <a href="/">Search</a>
+    <a href="/dashboard.html">Keys</a>
+  </nav>
+</header>
+
+<main>
+  <section class="card">
+    <h2>Use your personal key</h2>
+    <p>Enter your master API key (set as <code>PERSONAL_API_KEY</code> on the server) to manage keys.</p>
+    <input id="master" type="password" placeholder="Master API key" />
+    <button id="saveMaster">Save to this browser</button>
+  </section>
+
+  <section class="card">
+    <h2>Create a new API key</h2>
+    <input id="label" type="text" placeholder="Label (e.g. research-agent-1)" />
+    <button id="create">Generate key</button>
+    <pre id="newKey"></pre>
+  </section>
+
+  <section class="card">
+    <h2>Existing keys</h2>
+    <button id="refresh">Refresh</button>
+    <ul id="keyList"></ul>
+  </section>
+</main>
+
+<script src="/dashboard.js"></script>
+</body>
+</html>
