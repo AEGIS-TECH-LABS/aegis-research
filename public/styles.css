@@ -1,0 +1,48 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0; font-family: system-ui, -apple-system, sans-serif;
+  background: #0b0d10; color: #e8eaed; line-height: 1.55;
+}
+header {
+  padding: 16px 24px; border-bottom: 1px solid #1c2029;
+  display: flex; justify-content: space-between; align-items: center;
+}
+header h1 { font-size: 18px; margin: 0; }
+nav a { color: #9aa4b2; margin-left: 16px; text-decoration: none; }
+nav a:hover { color: #fff; }
+
+main { max-width: 780px; margin: 0 auto; padding: 24px; }
+
+.search-box { display: flex; gap: 8px; flex-wrap: wrap; }
+.search-box input[type=text] {
+  flex: 1; min-width: 240px; padding: 12px; border-radius: 8px;
+  border: 1px solid #232833; background: #12161c; color: #fff; font-size: 15px;
+}
+.search-box button {
+  padding: 12px 20px; border-radius: 8px; border: 0;
+  background: #4f8cff; color: #fff; font-weight: 600; cursor: pointer;
+}
+.search-box button:hover { background: #3c78e6; }
+.opts { width: 100%; margin-top: 8px; color: #9aa4b2; font-size: 13px; }
+.opts input { width: 60px; background: #12161c; color: #fff; border: 1px solid #232833; border-radius: 6px; padding: 4px 6px; }
+
+#status { margin: 20px 0; color: #9aa4b2; font-size: 14px; }
+
+.result {
+  padding: 14px 0; border-bottom: 1px solid #1c2029;
+}
+.result h3 { margin: 0 0 6px; font-size: 16px; }
+.result h3 a { color: #7fb1ff; text-decoration: none; }
+.result h3 a:hover { text-decoration: underline; }
+.result p { margin: 0 0 6px; color: #c3cad6; }
+.result small { color: #6c7683; }
+
+.card { background: #12161c; border: 1px solid #232833; padding: 16px; border-radius: 10px; margin-bottom: 16px; }
+.card h2 { margin: 0 0 12px; font-size: 15px; }
+.card input { width: 100%; padding: 10px; margin-bottom: 8px; border-radius: 8px; border: 1px solid #232833; background: #0b0d10; color: #fff; }
+.card button { padding: 10px 16px; border-radius: 8px; border: 0; background: #4f8cff; color: #fff; font-weight: 600; cursor: pointer; }
+pre { background: #0b0d10; padding: 12px; border-radius: 8px; overflow-x: auto; font-size: 12px; }
+ul { padding-left: 18px; }
+li { margin-bottom: 8px; }
+li code { background: #0b0d10; padding: 2px 6px; border-radius: 4px; }
+li button { margin-left: 8px; padding: 4px 8px; font-size: 12px; }
