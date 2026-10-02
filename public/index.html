@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aegis Research</title>
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<header>
+  <h1>Aegis Research</h1>
+  <nav>
+    <a href="/">Search</a>
+    <a href="/dashboard.html">Keys</a>
+  </nav>
+</header>
+
+<main>
+  <section class="search-box">
+    <input id="q" type="text" placeholder="Ask anything…" autofocus />
+    <button id="go">Search</button>
+    <div class="opts">
+      <label>Results <input id="limit" type="number" value="10" min="1" max="25" /></label>
+    </div>
+  </section>
+
+  <section id="status"></section>
+  <section id="results"></section>
+</main>
+
+<!-- honeypot field, bots will fill this -->
+<input type="text" id="hp" name="hp" style="display:none" tabindex="-1" autocomplete="off" />
+
+<script src="/app.js"></script>
+</body>
+</html>
